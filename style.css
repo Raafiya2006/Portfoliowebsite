@@ -1,0 +1,15 @@
+/* Add this to your CSS */
+.section {
+  pointer-events: none; /* Default: clicks pass through */
+  visibility: hidden;   /* Hide from screen readers/focus when not active */
+}
+
+.section.show {
+  pointer-events: auto; /* Enable clicks only when section is visible */
+  visibility: visible;
+}
+
+/* Ensure the hero and contact content can be clicked specifically */
+.content {
+  pointer-events: auto;
+}
